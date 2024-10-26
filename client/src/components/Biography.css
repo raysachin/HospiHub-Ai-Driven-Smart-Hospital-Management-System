@@ -1,0 +1,36 @@
+/* Biography.css */
+.biography {
+    padding: 40px 20px; /* Padding for the biography section */
+    background-color: #f2f9ff; /* Light background for the biography section */
+    border-radius: 8px; /* Rounded corners for the biography section */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    margin: 20px 0; /* Margin to separate from other sections */
+}
+
+.banner {
+    text-align: center; /* Center text in the banner */
+    margin-bottom: 20px; /* Space between banners */
+}
+
+.biography-image {
+    width: 70%; /* Reduced image width */
+    max-width: 400px; /* Max width for the image */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 8px; /* Rounded corners for the image */
+    margin-bottom: 20px; /* Space below the image */
+}
+
+h3 {
+    font-size: 2rem; /* Size for the heading */
+    color: #007BFF; /* Main color for heading */
+    margin-bottom: 15px; /* Space below the heading */
+}
+
+p {
+    font-size: 1.1rem; /* Comfortable paragraph font size */
+    color: #333; /* Dark color for the paragraph text */
+    line-height: 1.6; /* Line height for better readability */
+    max-width: 800px; /* Max width for the paragraph */
+    margin: 0 auto; /* Center the paragraph */
+    padding: 0 10px; /* Padding for responsiveness */
+}

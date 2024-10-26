@@ -1,0 +1,42 @@
+/* Hero.css */
+.hero {
+    padding: 240px 20px; /* Padding for the hero section */
+    background-color: #f2f9ff; /* Light background for the hero section */
+    border-radius: 8px; /* Rounded corners for the hero section */
+}
+
+.banner {
+    text-align: center; /* Center text in the banner */
+    margin-bottom: 20px; /* Space between banners */
+}
+
+h1 {
+    font-size: 2.5rem; /* Large title font size */
+    color: #007BFF; /* Main color for title */
+    margin-bottom: 15px; /* Space below the title */
+}
+
+p {
+    font-size: 1.1rem; /* Comfortable paragraph font size */
+    color: #333; /* Dark color for the paragraph text */
+    line-height: 1.6; /* Line height for better readability */
+    max-width: 800px; /* Max width for the paragraph */
+    margin: 0 auto; /* Center the paragraph */
+    padding: 0 10px; /* Padding for responsiveness */
+}
+
+strong {
+    color: #007BFF; /* Highlighted text color */
+}
+
+.animated-image {
+    width: 50%; /* Reduced image width */
+    max-width: 300px; /* Max width for the image */
+    height: auto; /* Maintain aspect ratio */
+}
+
+span {
+    display: flex;
+    justify-content: center; /* Center vector image */
+    margin-top: 10px; /* Space above the vector image */
+}

@@ -1,6 +1,6 @@
 const { Appointment } = require("../models/appointment.models.js");
 const { User } = require("../models/user.models.js");
-const ErrorHandler = require("../middlewares/error.middlewares.js");
+const {ErrorHandler} = require("../middlewares/error.middlewares.js");
 
 // Post a new appointment
 exports.postAppointment = async (req, res, next) => {
@@ -64,6 +64,8 @@ exports.postAppointment = async (req, res, next) => {
     const doctorId = isConflict[0]._id;
     const patientId = req.user._id;
 
+    
+
     const appointment = await Appointment.create({
       firstName,
       lastName,
@@ -83,6 +85,8 @@ exports.postAppointment = async (req, res, next) => {
       doctorId,
       patientId,
     });
+
+    console.log("Posting Apointment");
 
     // Success response
     res.status(200).json({
@@ -140,6 +144,7 @@ exports.updateAppointmentStatus = async (req, res, next) => {
     res.status(200).json({
       success: true,
       message: "Appointment Status Updated!",
+      appointment
     });
   } catch (error) {
     res.status(500).json({

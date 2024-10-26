@@ -1,7 +1,6 @@
 const express = require("express");
 const dotenv = require("dotenv");
 const cookieParser = require("cookie-parser");
-const cors = require("cors");
 const fileUpload = require("express-fileupload");
 const { errorMiddleware } = require("./middlewares/error.middlewares");
 const messageRouter = require("./routes/message.routes");
@@ -11,13 +10,15 @@ const appointmentRouter = require("./routes/appointment.routes");
 const app = express();
 dotenv.config({ path: "./config.env" });
 
-app.use(
-  cors({
-    origin: [process.env.FRONTEND_URL_ONE, process.env.FRONTEND_URL_TWO],
-    method: ["GET", "POST", "DELETE", "PUT"],
-    credentials: true,
-  })
-);
+// Set up CORS before other middlewares and routes
+const cors = require("cors");
+
+app.use(cors({
+    origin: ["http://localhost:5173"],
+    methods: ["GET", "POST", "DELETE", "PUT"],
+    credentials: true
+}));
+
 
 app.use(cookieParser());
 app.use(express.json());

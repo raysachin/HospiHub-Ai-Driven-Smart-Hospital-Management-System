@@ -12,9 +12,14 @@ const {
 
 const router = express.Router();
 
-router.post("/post", isPatientAuthenticated, postAppointment);
-router.get("/getall", isAdminAuthenticated, getAllAppointments);
-router.put("/update/:id", isAdminAuthenticated, updateAppointmentStatus);
-router.delete("/delete/:id", isAdminAuthenticated, deleteAppointment);
+router.post("/post", isPatientAuthenticated, postAppointment);  // Done
+
+router.get("/getall", isAdminAuthenticated, getAllAppointments);  // Done
+
+
+router.put("/update/:id", isAdminAuthenticated, updateAppointmentStatus);  // Done
+
+
+router.delete("/delete/:id", isAdminAuthenticated, deleteAppointment);  // Done
 
 module.exports = router;

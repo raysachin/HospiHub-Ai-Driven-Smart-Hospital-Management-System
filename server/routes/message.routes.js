@@ -7,7 +7,8 @@ const { isAdminAuthenticated } = require("../middlewares/auth.middlewares");
 
 const router = express.Router();
 
-router.post("/send", sendMessage);
-router.get("/getall", isAdminAuthenticated, getAllMessages);
+router.post("/send", sendMessage);  // Done
+
+router.get("/getall", isAdminAuthenticated, getAllMessages);   // Done
 
 module.exports = router;

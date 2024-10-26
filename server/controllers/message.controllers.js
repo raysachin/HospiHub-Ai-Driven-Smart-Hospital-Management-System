@@ -11,8 +11,12 @@ exports.sendMessage = async (req, res, next) => {
       return next(new ErrorHandler("Please Fill Full Form!", 400));
     }
 
+    
+
     // Create a new message in the database
     await Message.create({ firstName, lastName, email, phone, message });
+
+    console.log("Sending Message");
 
     // Success response
     res.status(200).json({
