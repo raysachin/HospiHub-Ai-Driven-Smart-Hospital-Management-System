@@ -1,0 +1,121 @@
+.form-container {
+    max-width: 90%;
+    margin: 0 auto;
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.form-heading {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.symptom-form {
+    position: relative;
+}
+
+.symptom-input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+    transition: border 0.3s;
+}
+
+.symptom-input:focus {
+    border: 1px solid #007bff;
+    outline: none;
+}
+
+.suggestion-list {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    max-height: 300px;
+    overflow-y: auto;
+    background-color: white;
+    position: absolute;
+    z-index: 1000;
+    width: 100%;
+    margin-top: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.suggestion-item {
+    padding: 10px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.suggestion-item:hover {
+    background-color: #f1f1f1;
+}
+
+.selected-symptoms {
+    margin: 10px 0;
+}
+
+.selected-symptom {
+    display: inline-block;
+    background-color: #007bff;
+    color: white;
+    border-radius: 15px;
+    padding: 5px 10px;
+    margin: 5px;
+}
+
+.remove-icon {
+    margin-left: 10px;
+    cursor: pointer;
+    color: white;
+}
+
+.submit-button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-top: 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.submit-button:hover {
+    background-color: #0056b3;
+}
+
+.response-container {
+    background-color: #f8f9fa; /* Light background color */
+    border: 1px solid #ced4da; /* Light gray border */
+    border-radius: 8px; /* Rounded corners */
+    padding: 20px; /* Padding for inner spacing */
+    margin-top: 20px; /* Space above the report card */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.response-heading {
+    font-size: 1.5em; /* Larger font size for heading */
+    color: #343a40; /* Dark gray color for text */
+    margin-bottom: 15px; /* Space below heading */
+    text-align: center; /* Center the heading */
+}
+
+h4 {
+    margin-top: 15px; /* Space above subheadings */
+    color: #495057; /* Medium dark gray */
+    border-bottom: 1px solid #e9ecef; /* Divider below subheadings */
+    padding-bottom: 5px; /* Padding below subheadings */
+}
+
+ul {
+    list-style-type: disc; /* Bullet points for lists */
+    padding-left: 20px; /* Indent the list */
+    margin: 10px 0; /* Margin above and below lists */
+}
