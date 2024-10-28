@@ -84,7 +84,7 @@ const SymptomsForm = () => {
             const data = await response.json();
             setApiResponse(data);
         } else {
-            console.error('Error submitting symptoms:', response.statusText);
+            // console.error('Error submitting symptoms:', response.statusText);
             setApiResponse(null);
         }
     };
