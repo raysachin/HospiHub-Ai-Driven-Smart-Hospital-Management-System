@@ -9,7 +9,10 @@ exports.patientRegister = async (req, res, next) => {
     console.log("Registration Began");
     const { firstName, lastName, email, phone, nic, dob, gender, password } = req.body;
     
-    if (!firstName || !lastName || !email || !phone || !nic || !dob || !gender || !password) {
+    // if (!firstName || !lastName || !email || !phone || !nic || !dob || !gender || !password) {
+    //   return next(new ErrorHandler("Please Fill Full Form!", 400));
+    // }
+    if (!firstName || !lastName || !email || !phone || !dob || !gender || !password) {
       return next(new ErrorHandler("Please Fill Full Form!", 400));
     }
 
@@ -89,7 +92,10 @@ exports.addNewAdmin = async (req, res, next) => {
     
     const { firstName, lastName, email, phone, nic, dob, gender, password } = req.body;
 
-    if (!firstName || !lastName || !email || !phone || !nic || !dob || !gender || !password) {
+    // if (!firstName || !lastName || !email || !phone || !nic || !dob || !gender || !password) {
+    //   return next(new ErrorHandler("Please Fill Full Form!", 400));
+    // }
+    if (!firstName || !lastName || !email || !phone || !dob || !gender || !password) {
       return next(new ErrorHandler("Please Fill Full Form!", 400));
     }
     
@@ -150,7 +156,11 @@ exports.addNewDoctor = async (req, res, next) => {
     // Extract data from request body
     const { firstName, lastName, email, phone, nic, dob, gender, password, doctorDepartment } = req.body;
 
-    if (!firstName || !lastName || !email || !phone || !nic || !dob || !gender || !password || !doctorDepartment || !docAvatar) {
+    // if (!firstName || !lastName || !email || !phone || !nic || !dob || !gender || !password || !doctorDepartment || !docAvatar) {
+    //   return next(new ErrorHandler("Please Fill Full Form!", 400));
+    // }
+
+    if (!firstName || !lastName || !email || !phone || !dob || !gender || !password || !doctorDepartment || !docAvatar) {
       return next(new ErrorHandler("Please Fill Full Form!", 400));
     }
 

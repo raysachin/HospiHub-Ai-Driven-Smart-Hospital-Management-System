@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import './SymptomsForm.css'; // Import CSS file
 
+
 const symptoms_dict = {
     'itching': 0, 'skin_rash': 1, 'nodal_skin_eruptions': 2, 'continuous_sneezing': 3, 'shivering': 4,
     'chills': 5, 'joint_pain': 6, 'stomach_pain': 7, 'acidity': 8, 'ulcers_on_tongue': 9,
